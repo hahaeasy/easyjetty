@@ -1,5 +1,6 @@
 package com.hahaeasy.easyjetty.server;
 
+import com.hahaeasy.easyjetty.servlet.DefaultServlet;
 import com.hahaeasy.easyjetty.servlet.HelloServlet;
 import org.apache.log4j.Logger;
 import org.eclipse.jetty.server.Server;
@@ -27,7 +28,7 @@ public class ServiceConfig {
 
             context.addServlet(new ServletHolder(new HelloServlet()),"/hello");
 
-            context.addServlet(new ServletHolder(new HelloServlet()),"/*");
+            context.addServlet(new ServletHolder(new DefaultServlet()),"/*");
 
             server.start();
 
