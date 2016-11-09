@@ -10,8 +10,8 @@ import org.eclipse.jetty.servlet.ServletHolder;
 /**
  * Created by tonyxue on 2/5/16.
  */
-public class ServiceConfig {
-    static Logger log = Logger.getLogger(ServiceConfig.class);
+public class ServiceMain {
+    static Logger log = Logger.getLogger(ServiceMain.class);
 
     static int serverPort = 8060;
 
